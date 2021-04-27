@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+	<head>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<title>Simplex@FHWS</title>
+		<meta charset ="utf-8">
+
+	</head>
+	<body>
+	
+			
+	
+		<div id="wrapper">
+			<header><h1>Simplex@FHWS</h1></header>
+			
+			
+			<nav>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="#">Schritt für Schritt Anleitung</a></li>
+					<li><a href="contact.html">Kontakt</a></li>
+				</ul>
+			</nav>
+			
+			<section> 
+				<h2>Schritt für Schritt Anleitung Simplex Tableau</h2>
+				<h4>1.Schritt: Tabelle befüllen</h4>
+				<img src="Bilder/step1.png" alt="Bild Schritt 1">
+				<h4>2.Schritt: Pivotspalte festlegen (hier rot)</h4>
+				<p>Die Pivotspalte ist die Spalte, in der die Nicht-Basis-Variable der Zielzeile den kleinsten negativen Wert aufweist. Hier: X1 = -210.</p>
+				<h4>3.Schritt: Pivotzeile festlegen (hier grün)</h4>
+				<p>Hier wird für jede Zeile einer Schlupfvariablen jeweils (rechte Seite : Pivotspaltenelement) gerechnet, außer dieses Element ist negativ oder 0.
+					Die Zeile mit dem kleinsten Ergebnis ist unsere Pivotzeile. Hier: SB = 4:2 = 2.</p>
+				<h4>4.Schritt: Pivotelement festlegen (hier gelb)</h4>
+				<p>Das Pivotelement ist der Schnittpunkt von Pivotzeile und -spalte. Hier: X1, SB = 2.</p>
+				<h4>5.Schritt: Neue Tabelle bilden</h4>
+				<img src="Bilder/step5.png" alt="Bild Schritt 5">
+				<ul>
+					<li>Die Nicht-Basis-Variable der Pivotspalte und die Basisvariable der Pivotzeile werden getauscht. Hier: SB und X1</li>
+					<li>Pivotelement* = Kehrwert des Pivotelementes. Hier: 2 -> 0,5</li>
+					<li>Pivotspalte* = (Feld(alt)/Pivotelement)*(-1). Z. B. 4/2*(-1) = -2</li>
+					<li>Pivotzeile* = (Feld(alt)/Pivotelement). Z. B. (-1)/2 = -0,5</li>
+					<li>Restliche Felder = Feld(alt)-(Pivotzeile*Pivotspalte)/Pivotelement. 
+						Z. B. 2-(4*(-1))/2 = 4. Die verwendeten Felder ergeben hierbei immer ein Quadrat.</li>
+				</ul>
+				<h4>6.Schritt: Wiederholen von Schritt 2 – 5, bis die Nicht-Basis-Variablen von G alle positiv sind.</h4>
+			</section>
+			<footer> 
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="#">Schritt für Schritt Anleitung</a></li>
+					<li><a href="contact.html">Kontakt</a></li>
+				</ul>
+
+			</footer>
+		</div>     
+	</body>
+
+
+
+</html>
